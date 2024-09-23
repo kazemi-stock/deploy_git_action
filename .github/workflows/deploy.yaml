@@ -1,0 +1,13 @@
+name: Deploy to Github Pages
+on:
+  pull_request: {}
+  push:
+    branches:
+      - 'b-7.2.x*'
+
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+  steps:
+  - name: checkout code
+    uses: actions/checkout@v2
