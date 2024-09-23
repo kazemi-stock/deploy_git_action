@@ -1,10 +1,6 @@
 name: Deploy to Github Pages
 on:
-  pull_request: {}
-  push:
-    branches:
-      - 'b-7.2.x*'
-
+  workflow_dispatch
 jobs:
  deploy:
   runs-on: ubuntu-latest
